@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>Welcome to Balasore Bike Rental</title>
+
+    <link rel="stylesheet" href="{% static 'css/demo.css' %}">
+
+</head>
+<body>
+    <div class="header">
+        <span class="contact">Contact: +91-6371946514</span> <!-- Your contact information -->
+    </div>
+
+
+    <h1>Welcome to Balasore Bike Rental Service</h1>
+
+    <img src="{% static 'images/s.jpg' %}"alt="coming soon" align="left">
+    <img src="{% static 'images/b.jpg' %}"alt="coming soon" align="right">
+    <h1><a href="{% url 'scooty-page' %}">&#9758;Rent a Scooty</a></h1><br><br><br>
+    <h1><a href="{% url 'bike-page' %}">&#9758;Rent a Bike</a></h1><br>
+    <p>
+        <h2>
+            Terms & Conditions<br>
+        </h2>
+        <hr>
+        <h5>
+            &rarr; Before you begin your journey, you must inspect and acquaint with the vehicle .Please clarify your all doubts before beginning your trip.<br>
+            &rarr; During the time of the bike rental, the rider should wear helmets and possess a valid driving license issued by the government of india.<br>
+            &rarr; Each bike can only transport two passengers at a time, including the rider.<br>
+            &rarr; In case of loss of helmet, you have to pay Rs.600.<br>
+            &nbsp;&nbsp;&nbsp;&rarr; Damages & its charges: No damage can be tolerated, it does not matter whether minor or major damages.<br>
+            you will need to pay for the damage .
+        </h5>
+    </p>
+
+</body>
+</html>
